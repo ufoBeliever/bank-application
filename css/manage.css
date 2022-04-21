@@ -55,18 +55,24 @@ body{
     border-radius: 15px;
     margin: 0 auto;
     max-width: 100%;
-    height: 450px;
+    height: 80px;
     background-color: white;
+    margin-top: 30px;
 }
 
-.open-close-button{
+.open-close-button-create{
     margin-left: 25px;
-    width: 30px;
-    height: 20px;
+    background-color: white;
+    border: none;
     float: left;
 }
 
-.open-close-button:hover{
+.open-close-button-img{
+    width: 30px;
+    height: 20px;
+}
+
+button:hover, input:hover{
     cursor: pointer;
 }
 
@@ -76,7 +82,7 @@ body{
 
 .create-bank-title{
     font-size: 30px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 .create-bank-header{
@@ -96,12 +102,14 @@ body{
 }
 
 .form-buttons-wrapper{
-    width: 50%;
+    max-width: 500px;
     margin-top: 10px;
 }
 
+
 .form-text-input{
-    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     height: 25px;
     border-radius: 15px;
     border: 1px solid #c1c1c1;
@@ -139,4 +147,153 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-size: 14px;
     display: block;
     display: none;
-  }
+}
+
+.banks-list{
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 290px;
+    background-color: white;
+    padding-top: 25px;
+}
+
+.create-bank-main{
+    display: none;
+}
+
+.bank-element{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    max-width: 600px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid #c1c1c1;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+@media screen and (max-width: 710px) {
+    .bank-element{
+        max-width: 250px;
+    }
+}
+
+
+.banks-list-header{
+    height: 40px;
+}
+
+.current-banks-list{
+    overflow: scroll;
+    height: 230px;
+    overflow-x: hidden;
+    margin-left: 25px;
+}
+
+.current-banks-list::-webkit-scrollbar{
+    width: 0px;
+}
+
+.bank-element-button{
+    width: 20px;
+    height: 20px;
+}
+
+.bank-element span{
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+
+.bank-element-buttons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 70px;
+}
+
+.bank-element-buttons-wrapper button{
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+}
+
+.button-img{
+    width: 20px;
+    height: 20px;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.modal-data{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    background-color: white;
+    z-index: 100;
+    border-radius: 15px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.close-modal{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+}
+
+.bank-info-wrapper{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.bank-info-wrapper li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bank-info-change-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bank-info-change-form{
+    margin-top: 30px;
+    margin-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 200px;
+}
+
+.form-button-change{
+    height: 30px;
+    width: 70px;
+    border-radius: 15px;
+    border: none;
+
+    border: 1px solid #c1c1c1;
+    background-color: #f0f0f0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}

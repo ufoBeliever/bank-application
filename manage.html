@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/manage.css">
 </head>
 <body>
+    <div class="modal"></div>
+    <div class="modal-content"></div>
     <div class="wrapper">
         <header>
             <div class="container">
@@ -19,9 +21,19 @@
         </header>
         <main class="main">
             <div class="container">
-               <div class="add-bank-form">
+                <div class="banks-list">
+                    <header class="banks-list-header">
+                         <h3 class="create-bank-title header-name">Banks list</h3>
+                    </header>
+                    <main class="banks-list-main">
+                        <ul class="current-banks-list"></ul>
+                    </main>
+                </div>
+                <div class="add-bank-form">
                    <header class="create-bank-header">
-                        <img src="img/open-close-spoiler.png" class="open-close-button rotate">
+                        <button class="open-close-button-create rotate">
+                            <img src="img/open-close-spoiler.png" class="open-close-button-img">
+                        </button>
                         <h3 class="create-bank-title header-name">Create bank</h3>
                     </header>
                     <main class="create-bank-main">
@@ -40,8 +52,8 @@
                             <span class="form__error">Loan term should be a number</span>
 
                             <div class="form-buttons-wrapper">
-                                <input type="reset" value="Ok" class="form-button" id="submit-button">
-                                <input type="submit" value="Reset" class="form-button">
+                                <input type="submit" value="Ok" class="form-button" id="submit-button">
+                                <input type="reset" value="Reset" class="form-button">
                             </div>
                         </form>
                     </main>
@@ -49,6 +61,6 @@
             </div>
         </main>
     </div>
-    <script src="./js/imanage.js"></script>
+    <script src="./js/manage.js"></script>
 </body>
 </html>
