@@ -20,7 +20,31 @@
         <main class="main">
             <div class="container">
                <div class="add-bank-form">
-                <img src="img/open-close-spoiler.png" class="open-close-button rotate">
+                   <header class="create-bank-header">
+                        <img src="img/open-close-spoiler.png" class="open-close-button rotate">
+                        <h3 class="create-bank-title header-name">Create bank</h3>
+                    </header>
+                    <main class="create-bank-main">
+                        <form class="create-bank-form">
+                            <input class="form-text-input" placeholder="Bank name" required>
+                            <input class="form-text-input" placeholder="Interest rate" min = "0" max = "100" type="number">
+                            <span class="form__error">Interest rate should be from 0% to 100%</span>
+
+                            <input class="form-text-input" placeholder="Maximum loan" required type="number">
+                            <span class="form__error">Maximum loan should be a number</span>
+
+                            <input class="form-text-input" placeholder="Minimum down payment" required min = "0" max = "100" type="number">
+                            <span class="form__error">Minimum down payment should be from 0% to 100%</span>
+
+                            <input class="form-text-input" placeholder="Loan term (days)" required type="number">
+                            <span class="form__error">Loan term should be a number</span>
+
+                            <div class="form-buttons-wrapper">
+                                <input type="reset" value="Ok" class="form-button" id="submit-button">
+                                <input type="submit" value="Reset" class="form-button">
+                            </div>
+                        </form>
+                    </main>
                </div>
             </div>
         </main>
