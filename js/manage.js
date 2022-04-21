@@ -69,15 +69,15 @@ function update(){
             let buttons = `
             <div class="bank-element-buttons-wrapper">
             <button class="bank-element-button learn-more">
-                <img src="../img/learn-more-button.png" class="button-img">
+                <img src="img/learn-more-button.png" class="button-img">
             </button>
             
             <button class="bank-element-button edit">
-                <img src="../img/edit-button.png" class="button-img">
+                <img src="img/edit-button.png" class="button-img">
             </button>
 
             <button class="bank-element-button delete">
-                <img src="../img/delete-button.png" class="button-img">
+                <img src="img/delete-button.png" class="button-img">
             </button>
             </div>`
             insertValue+=`<li class="bank-element">${buttons}${str.slice(0, 70)+'...'}</li>`
@@ -87,7 +87,6 @@ function update(){
 }
 
 document.getElementById('submit-button').addEventListener('click', function(ev){
-    ev.preventDefault()
     let bankData = []
     let isFormValid = true
     Array.from(document.querySelectorAll('input:invalid')).forEach((el)=>{
