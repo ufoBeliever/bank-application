@@ -24,6 +24,8 @@ body{
 
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .header-name{
@@ -31,7 +33,22 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 200px;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width:1000px){
