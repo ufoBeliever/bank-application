@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage calculator</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mortgage.css">
+</head>
+<body>
+    <a href="./manage.html">manage</a>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <h1 class="header-name">Mortgage calculator</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main-content">
+                   <form class="mortgage-form">
+                        <input class="text-input" placeholder="Initial loan" type="number">
+                        <span class="form__error">Initial loan should be a number</span>
+
+                        <input class="text-input" placeholder="Down payment" type="number">
+                        <span class="form__error">Down payment should be a number</span>
+                        <select></select>
+                        <div class="form-buttons-wrapper">
+                            <input type="submit" value="Ok" id="form-submit-button">
+                            <input type="reset" value="Reset">
+                        </div>
+                   </form>
+                   <div class="result-wrapper">
+                        <h5 class="result-title">Result:</h5>
+                        <span class="result-input"></span>
+                   </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/mortgage.js"></script>
+</body>
+</html>

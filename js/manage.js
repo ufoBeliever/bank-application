@@ -181,10 +181,10 @@ listItemsWrapper.addEventListener('click', function(ev){
             </button>
             <ul class="bank-info-wrapper">
                 <li>Bank name: ${valuesArr[0]}</li>
-                <li>Interest rate: ${valuesArr[1]}</li>
+                <li>Interest rate: ${valuesArr[1]}%</li>
                 <li>Maximum loan: ${valuesArr[2]}</li>
-                <li>Minimum down payment: ${valuesArr[3]}</li>
-                <li>Loan term: ${valuesArr[4]}</li>
+                <li>Minimum down payment: ${valuesArr[3]}%</li>
+                <li>Loan term: ${valuesArr[4]} month</li>
             </ul>
         </div>`;
 
